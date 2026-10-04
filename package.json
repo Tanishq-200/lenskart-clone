@@ -1,0 +1,16 @@
+{
+  "name": "lenskart-franchise-portal",
+  "version": "1.0.0",
+  "description": "Full-stack Lenskart Franchise & Landlord Portal with Admin Management",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "node server/src/index.js",
+    "test:api": "node server/src/test-api.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
